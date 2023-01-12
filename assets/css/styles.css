@@ -707,7 +707,6 @@ position: absolute;
   row-gap: 3rem;
   padding-bottom: 3rem;
 }
-
 .contact__title{
   text-align: center;
   font-size: var(--h3-font-size);
@@ -718,7 +717,7 @@ position: absolute;
   display: grid;
   gap: 1rem;
 }
-@media (min-width: 110px) {
+@media (min-width: 968px) {
   .contact__info{
     grid-template-columns: repeat(3, 1fr);
   }
