@@ -1,22 +1,22 @@
-# [Mi Repositorio](https://github.com/GonzaloArray/mi-repository.git)
+# [My Repository](https://github.com/GonzaloArray/mi-repository.git)
 [![image.png](https://i.postimg.cc/bvG58xJk/image.png)](https://postimg.cc/2qDG7BnS)
-## 📜 Resumen 📜
-Desarrollador Web Frontend con React y Typescript. Apasionado del autoaprendizaje y del código limpio.
+## 📜 Summary  📜
+Frontend Web Developer with React and TypeScript. Passionate about self-learning and clean code.
 
-## 💻 Instalación 💻
-- Ubicarse en la carpeta que contendrá el proyecto
-- Abrir terminal de comandos
-  - git clone https://github.com/GonzaloArray/mi-repository.git
-  - cd mi-repository
-  - Levantar la web en un servidor y disfrutar
+## 💻 Installation 💻
+Navigate to the folder that will contain the project.
+Open a command terminal.
+- git clone https://github.com/GonzaloArray/my-repository.git
+- cd my-repository
+- Start a web server to run the application and enjoy.
 
 ## 👨‍💻 Tecnologías usadas 👨‍💻
-| Tecnología | Versión | Descripción                                                                     |
+| Technology | Version | Description                                                                    |
 |------------|---------|---------------------------------------------------------------------------------|
-| HTML       | 5       | Lenguaje de Marcas que define el significado y la estructura del contenido web. |
-| CSS        | 3       | Lenguaje de estilos utilizado para describir la presentación de documentos.     |
-| JS        | ES6       | Lenguaje de progrmación utilizado para describir la presentación de documentos.     |
+| HTML       | 5       | Markup language that defines the structure and meaning of web content. |
+| CSS        | 3       | Stylesheet language used to describe the presentation of documents.    |
+| JS        | ES6       | Programming language used to describe the behavior of web documents.    |
 
-## 🤗 Redes sociales 🤗
+## 🤗 Social Media  🤗
 - 🐭 GitHub: https://github.com/GonzaloArray
 - 🐭 LinkedIn: https://www.linkedin.com/in/gonzalo-arrayaran-778258186/
