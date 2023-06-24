@@ -1,5 +1,9 @@
 # [My Repository](https://github.com/GonzaloArray/mi-repository.git)
-[![image.png](https://i.postimg.cc/bvG58xJk/image.png)](https://postimg.cc/2qDG7BnS)
+![image](https://github.com/GonzaloArray/mi-repository/assets/98492446/2d901ca6-008b-4d6a-b9bc-9be535db6cbf)
+
+## About me
+![image](https://github.com/GonzaloArray/mi-repository/assets/98492446/9c42f4aa-37f7-4d67-a5a0-6556f57d2d6d)
+
 ## 📜 Summary  📜
 Frontend Web Developer with React and TypeScript. Passionate about self-learning and clean code.
 
