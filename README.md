@@ -17,9 +17,9 @@ Open a command terminal.
 ## 👨‍💻 Tecnologías usadas 👨‍💻
 | Technology | Version | Description                                                                    |
 |------------|---------|---------------------------------------------------------------------------------|
-| HTML       | 5       | Markup language that defines the structure and meaning of web content. |
+| React       | -       | Markup language that defines the structure and meaning of web content. |
 | CSS        | 3       | Stylesheet language used to describe the presentation of documents.    |
-| JS        | ES6       | Programming language used to describe the behavior of web documents.    |
+| Three JS        | ES6       | Programming language used to describe the behavior of web documents.    |
 
 ## 🤗 Social Media  🤗
 - 🐭 GitHub: https://github.com/GonzaloArray
