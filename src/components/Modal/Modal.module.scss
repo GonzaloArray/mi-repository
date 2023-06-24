@@ -1,0 +1,73 @@
+@import '../../vars.scss';
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .header {
+    background: rgba(51, 51, 51, 1);
+    font-family: $heading-font;
+    padding: 1rem;
+    position: relative;
+
+    .close{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        color: white;
+        font-weight: 300;
+        font-size: 25px;
+        cursor: pointer;
+    }
+  }
+  
+  .header h2 {
+    margin: 0;
+    color: white;
+    font-size: $heading-font;
+  }
+  
+  .content {
+    padding: 1rem;
+    font-size: $body-font;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #f5f5f5;
+
+    a{
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: none;
+        color: $primary-color;
+        font-family: $body-font;
+        font-weight: bold;
+        font-size: 1rem;
+        width: 20%;
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }

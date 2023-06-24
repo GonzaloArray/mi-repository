@@ -1,0 +1,121 @@
+@import '../../vars.scss';
+
+.carousel{
+    overflow-x: hidden;
+    position: relative;
+    border-radius:  20px;
+    margin-top: 5em;
+    transition: all 0.3s ease;
+}
+
+.inner{
+    padding: 2% 0;
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.slider__item{
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: content-box;
+    white-space: normal;
+}
+
+.indicators{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: -8px;
+    top: 45%;
+    width: 99%;
+    padding-left: 1em;
+
+    .arrows{
+        background: rgba(51, 51, 51, 0.222);
+        border: none;
+        outline: 0;
+        padding: 5px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        backdrop-filter: blur(3px);
+        transition: background-color 0.3s;
+
+        svg{
+            width: 30px;
+            height: 30px;
+            color: white;
+        }
+    }
+
+    button:hover{
+        background-color: rgba(51, 51, 51, 0.522);
+        transition: background-color 0.3s;
+    }
+}
+
+.dots{
+    bottom: 0;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px black;
+
+    .dot{
+        border-radius: 100%;
+        width: 3px;
+        height: 13px;
+        cursor: pointer;
+    }
+}
+
+.dark-text{
+    color: $dark-color;
+}
+
+.light-text{
+    color: $light-color;
+}
+
+.dark-theme{
+    padding: 1rem;
+}
+
+.light-theme{
+    padding: 1rem;
+}
+
+.dark-dot{
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.light-dot{
+    border: 1px solid #333;
+    background-color: transparent;
+}
+
+.dark-active{
+    background-color: #fff;
+}
+
+.light-active{
+    background-color: #333;
+}
+
+@media(max-width: 768px){
+    .carousel{
+        height: 65vh !important;
+    }
+
+    .indicators{
+        left: -4.7% !important;
+    }
+}

@@ -1,0 +1,70 @@
+@import '../../vars.scss';
+
+.button{
+    position: relative;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 2%;
+    font-size: large;
+    font-family: $body-font;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    overflow: hidden;
+}
+
+.dark-button{
+    border: 2px solid $light-color;
+    color: $light-color;
+}
+
+.dark-button:before{
+    content: '';
+    position: absolute;
+    background-color: $light-color;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.5s ease;  
+}
+
+.dark-button:hover:before{
+    width: 100%;
+    color: $dark-color;
+    transition: width 0.5s ease;
+}
+
+.dark-button:hover{
+    color: $dark-color;
+    transition: color 0.3s ease;
+}
+
+.light-button{
+    border: 2px solid $dark-color;
+    color: $dark-color;
+}
+
+.light-button:before{
+    content: '';
+    position: absolute;
+    background-color: $dark-color;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.5s ease;  
+}
+
+.light-button:hover:before{
+    width: 100%;
+    color: $light-color;
+    transition: width 0.5s ease;
+}
+
+.light-button:hover{
+    color: $light-color;
+    transition: color 0.3s ease;
+}

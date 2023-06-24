@@ -1,0 +1,10 @@
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}

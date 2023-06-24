@@ -1,0 +1,109 @@
+@import '../../vars.scss';
+
+.stack__wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 10em 6em 0 6em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+
+    .stack__content{
+        padding: 0px 9em 0 9em;
+    
+        .stack__title{
+            padding-left: 1.2em;
+            font-family: $heading-font;
+            font-size: 2.5rem;
+            font-weight: bold;
+        
+        }
+    }
+}
+
+
+
+.front__wrapper{
+    position: relative;
+    padding-left: 5em;
+    font-family: $body-font;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-top: 1em;
+
+    .list__detail{
+        position: absolute;
+        top: -10%;
+        right: 30%;
+        width: 15%;
+    }
+
+    .background__detail{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 25%;
+    }
+}
+
+.dark-text{
+    color: $dark-color;
+}
+
+.light-text{
+    color: $light-color;
+}
+
+.dark-theme{
+    background: $dark-color;
+    background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgb(168, 5, 68) 33%);
+    color: $light-color;
+}
+
+.light-theme{
+    background: rgb(226,228,233);
+    background: linear-gradient(180deg, rgba(226,228,233,1) 0%, #c6e3f7 33%);
+    color: $dark-color;
+}
+
+
+@media(max-width: 1366px){
+    .stack__wrapper{
+        padding-top: 4em;
+
+        .stack__content{
+            padding: 0;
+        }
+
+        .front__wrapper{
+            padding-left: 1.5em;
+        }
+
+        .stack__title{
+            padding-left: 2.2em !important; 
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .stack__wrapper{
+        padding-left:2em !important; 
+        padding-right: 2em !important;
+        height: fit-content;
+    }
+    .front__wrapper{
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stack__title{
+        padding-left: 0 !important;
+    }
+    .stack__content{
+        padding: 0 !important;
+    }
+}

@@ -1,0 +1,143 @@
+@import "../../vars.scss";
+
+.contact__wrapper{
+    position: relative;
+    height: fit-content;
+    scroll-snap-align: start;
+    width: 100%;
+    padding: 8em 6em 0 6em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.title{
+    padding-left: 4em;
+    font-family: $heading-font;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact__text{
+    font-family: $body-font;
+    font-size: 1.5rem;
+    padding-left: 10em;
+    padding: 2em 0 2em 8em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    p{
+        font-family: $body-font;
+    }
+
+    .love__detail{
+        position: absolute;
+        top: 1px;
+        right: 34%;
+        width: 5%;
+    }
+}
+
+.font__detail{
+    position: absolute;
+    right: 50%;
+    top: 12%;
+    width: 5%;
+}
+
+.dark-text p{
+    color: $light-color;
+}
+
+.light-text p{
+    color: $dark-color;
+}
+
+.dark-theme{
+    background: $dark-color;
+    background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgb(168, 5, 68) 100%);
+    color: $light-color;
+}
+
+.light-theme{
+    background: rgb(226,228,233);
+    background: linear-gradient(180deg, rgba(226,228,233,1) 0%, rgba(206, 255, 247, 0.596) 100%);
+    color: $dark-color;
+}
+
+//Mobile
+
+@media (max-width: 1224px){
+    .contact_container{
+        background-color: transparent;
+        box-shadow: none;
+        
+        .title{
+            width: 100%;
+            color: white;
+
+            span:before{
+                background-color: darkseagreen;
+            }
+        }
+
+        label{
+            color: white;
+        }
+
+        .contact{
+            color: white;
+            border: 1px solid white;
+            width: 80%;
+        }
+        
+        .or_linkedin{
+            color: white;
+
+            a{
+                color: #555;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1366px){
+    .contact__wrapper{
+        height: fit-content !important;
+    }
+    .title{
+        padding-left: 2em !important; 
+    }
+    .contact__text{
+        padding-left: 3.4em;
+        padding-top: 0;
+    }
+    .love__detail{
+        position: absolute;
+        top: 5px;
+        right: 30% !important;
+        width: 5%;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .contact__wrapper{
+        padding: 15px !important;
+        box-sizing: border-box;
+        height: fit-content !important;
+    }
+    .contact__text{
+        padding: 0 !important;
+    }
+    .title{
+        padding: 0 !important;
+    }
+    .font__detail, .love__detail{
+        display: none !important;
+    }
+}

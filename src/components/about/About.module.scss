@@ -1,0 +1,156 @@
+@import '../../vars.scss';
+
+.about__wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    padding: 15em 6em 0 6em;
+    transition: all 0.3s ease;
+
+    .about__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+
+    }
+}
+
+.about__info{
+    position: relative;
+    padding: 0px 9em 0 9em;
+
+    .about__title{
+        padding-left: 1.2em;
+        font-family: $heading-font;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .about__description{
+        padding-left: 2em;
+        font-family: $body-font;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+}
+
+.about__model{
+    position: relative;
+    align-self: center;
+    justify-self: center;
+
+    .three__detail{
+        width: 40%;
+        position: absolute;
+        left: -50%;
+        top: -30%;
+    }
+    
+}
+
+.platforms__links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+
+    svg{
+        width: 2rem;
+        height: 2rem;
+        color: $secondary-color;
+        transition: all 0.3s ease;
+    }
+
+    svg:hover{
+        color: #666;
+    }
+}
+
+.download_cv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6rem;
+    position: relative;
+
+
+    .button__detail{
+        position: absolute;
+        right: -5%;
+        width: 30%;
+    }
+}
+
+.dark-text{
+    color: $dark-color;
+}
+
+.light-text{
+    color: $light-color;
+}
+
+.dark-theme{
+    background: $light-color;
+    color: $dark-color;
+}
+
+.light-theme{
+    background: $dark-color;
+    color: $light-color;
+}
+
+@media(max-width: 1366px){
+    .about__wrapper{
+        padding-top: 5em;
+
+        .about__info{
+            padding: 0 3em 0 3em;
+        }    
+    }
+
+    .three__detail{
+        width: 40%;
+        position: absolute;
+        left: -50%;
+        top: -5% !important;
+    }
+}
+
+@media (max-width:768px){
+    .about__wrapper{
+        height: fit-content;
+        padding: 2em 0 !important;
+    }
+    .about__content{
+        display: flex !important;
+        flex-direction:column-reverse !important;
+    }
+    .about__info{
+        padding: 0 !important;
+    }
+
+    .about__title{
+        padding-left: 15px !important;
+    }
+
+    .about__description{
+        padding-left: 0 !important;
+        padding: 15px !important;
+    }
+    
+    .download_cv{
+        margin-top: 2em !important;
+    }
+    .button__detail{
+        position: absolute;
+        right: 2% !important;
+        width: 22% !important;
+    }
+}
